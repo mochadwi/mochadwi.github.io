@@ -1,0 +1,212 @@
+body {
+  background-color: pink;
+}
+a {
+  text-decoration: none;
+}
+
+/* start color */
+.orange {
+  color: orange;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
+.aqua {
+  color: aqua;
+}
+.brown {
+  color: brown;
+}
+.yellow {
+  color: yellow;
+}
+.white {
+  color: white;
+}
+.black {
+  color: black;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+.bg-orange {
+  background-color: orange;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-lime {
+  background-color: lime;
+}
+.bg-pink {
+  background-color: pink;
+}
+/* end color */
+
+.verdana {
+  font-family: verdana;
+}
+.courier {
+  font-family: courier;
+}
+
+/* star weight */
+.weight-bold {
+  font-weight: bold;
+}
+/* end weight */
+
+/* start transform */
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+/* end transform */
+
+/* start font-variant */
+.small-caps {
+  font-variant: small-caps;
+}
+/* end font-variant */
+
+/* start decoration */
+.italic {
+  font-style: italic;
+}
+/* end decoration */
+
+/* start size */
+.large {
+  font-size: large;
+}
+.x-large {
+  font-size: x-large;
+}
+.xx-large {
+  font-size: xx-large;
+}
+.custom-15 {
+  font-size: 15px;
+}
+.custom-20 {
+  font-size: 20px;
+}
+.custom-30 {
+  font-size: 30px;
+}
+.custom-50 {
+  font-size: 50px;
+}
+/* end size */
+
+/* start align */
+.justify {
+  text-align: justify;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+/* end align */
+
+/* start line-height */
+.line-small {
+  line-height: 15px;
+}
+.line-normal {
+  line-height: 30px;
+}
+.line-medium {
+  line-height: 80px;
+}
+.line-large {
+  line-height: 100px;
+}
+/* end line-height */
+
+/* start space */
+.pre {
+  white-space: pre;
+}
+/* end space */
+
+/* start border */
+.bd-large {
+  border-width: 100px;
+}
+.bd-blue {
+  border-color: blue;
+}
+/* end border */
+
+.bg-pos-center {
+  background-position: center;
+}
+
+/* start custom format */
+a.hover:hover  {
+  color: white;
+  background-color: grey;
+  font-size: 50px;
+}
+/* end custom format */
+body#biodata,
+body#definisi2 {
+  background-color: transparent;
+}
+
+#biodata div {
+  
+}
+
+#biodata a,
+#layer a,
+#definisi1 a,
+#definisi2 a {
+  text-decoration: underline;
+}
+
+body#layer {
+  background-color: green;
+}
+
+#layer div {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+#layer .z-2 {
+  position: relative;
+  z-index: 2;
+  top: -29px;
+}
+
+#definisi1 {
+  background: url('../img/gambar1.jpg');
+}
+
+#definisi2 div {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#bio {
+  text-decoration: underline;
+  font-size: 30px;
+  font-variant: small-caps;
+}
