@@ -17,3 +17,14 @@
 - Form (Mirip field-nya seperti di biodata)
 - Layer (ambil yang dari PR kemarin juga)
 - N Halaman (dengan tema bebas)
+
+### References
+#### Marquee
+- http://html.com/tags/marquee/
+
+#### Responsive
+- https://www.seroundtable.com/google-static-responsive-design-20033.html
+- http://sitesforprofit.com/responsive-table-plugins-and-patterns
+
+#### Flat Icons
+- http://www.flaticon.com/free-icon/right-arrow_109617
