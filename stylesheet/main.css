@@ -239,15 +239,18 @@ body#layer {
   box-sizing: border-box;
   border-bottom: 3px solid transparent;
 }
-.mdl-link a:link {
+a.mdl-link:link {
   opacity: .65 !important;
+}
+a.mdl-link:hover {
+  opacity: 1 !important;
+  text-decoration: underline;
 }
 .mdl-header {
   background-image: url(../assets/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  vertical-align: middle;
 }
 .mdl-footer {
   background-color: #212121;
