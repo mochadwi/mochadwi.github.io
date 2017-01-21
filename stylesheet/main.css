@@ -271,3 +271,12 @@ a.mdl-link:hover {
 #footer {  
   padding-top: 15px;
 }
+
+.mdl-layer-1 {
+  position: relative;
+}
+
+.mdl-layer-2 {
+  position: relative;
+  top: -23px;
+}
