@@ -9,6 +9,79 @@ a {
   text-decoration: none;
 }
 
+.target {
+  display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -99999px;
+}
+/* start platform */
+.edx {
+  width: 193px;
+  height: 98px;
+  background: url(../assets/online/edx.png) top no-repeat;
+}
+.c_institute {
+  width: 40px;
+  height: 35px;
+  background: url(../assets/online/c++institute.png) top no-repeat;
+}
+.berkeley {
+  width: 417px;
+  height: 211px;
+  background: url(../assets/online/berkeley.png) top no-repeat;
+}
+.harvard {
+  width: 417px;
+  height: 210px;
+  background: url(../assets/online/harvard.png) top no-repeat;
+}
+.novoed {
+  width: 313px;
+  height: 83px;
+  background: url(../assets/online/novoed.png) top no-repeat;
+}
+.itunesu {
+  width: 274px;
+  height: 141px;
+  background: url(../assets/online/itunesu.png) top no-repeat;
+}
+.lynda {
+  width: 248px;
+  height: 249px;
+  background: url(../assets/online/lynda.png) top no-repeat;
+}
+.microsoft {
+  width: 656px;
+  height: 133px;
+  background: url(../assets/online/microsoft.png) top no-repeat;
+}
+.mit {
+  width: 407px;
+  height: 92px;
+  background: url(../assets/online/mit.png) top no-repeat;
+}
+.mongodbuniv {
+  width: 550px;
+  height: 140px;
+  background: url(../assets/online/mongodbuniv.png) top no-repeat;
+}
+.udemy {
+  width: 312px;
+  height: 102px;
+  background: url(../assets/online/udemy.png) top no-repeat;
+}
+.w3c {
+  width: 598px;
+  height: 122px;
+  background: url(../assets/online/w3c.png) top no-repeat;
+}
+a.target:hover {
+  opacity: .6;
+}
+
+/* end platform */
+
 img:hover {
   opacity: .6;
 }
@@ -240,8 +313,12 @@ body#layer {
   padding-right: 25px;
 }
 .mdl-wrapper {
-
+  padding: 30px;
+  width: 1024px;
   height: 323px;
+}
+.mdl-wrapper a {
+  display: inline-block;
 }
 .mdl-weigth-text--600 {
   font-weight: 600;
