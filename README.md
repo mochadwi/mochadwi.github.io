@@ -36,5 +36,8 @@
 - http://html.com/attributes/a-target/
 - http://www.w3schools.com/tags/att_a_target.asp (_parent solved everything :v)
 
-####
+#### Webhosting
 - 000webhostapp banner: https://www.000webhost.com/forum/t/how-to-remove-powered-by-000webhost/46900
+
+#### Styling
+- http://kyleschaeffer.com/development/pure-css-image-hover/
