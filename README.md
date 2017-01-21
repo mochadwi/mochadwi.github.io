@@ -30,4 +30,11 @@
 - http://www.flaticon.com/free-icon/right-arrow_109617
 
 #### Prettify
-https://dirtymarkup.com/
+- https://dirtymarkup.com/
+
+#### Frames
+- http://html.com/attributes/a-target/
+- http://www.w3schools.com/tags/att_a_target.asp (_parent solved everything :v)
+
+####
+- 000webhostapp banner: https://www.000webhost.com/forum/t/how-to-remove-powered-by-000webhost/46900
