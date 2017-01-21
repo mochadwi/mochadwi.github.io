@@ -9,6 +9,9 @@ a {
   text-decoration: none;
 }
 
+img:hover {
+  opacity: .6;
+}
 /* start margin */
   .margin-10 {
     margin: 10;
@@ -226,6 +229,20 @@ body#layer {
 }
 
 /* material design start */
+.mdl-navigation {
+  margin-top: 68px;
+}
+.mdl-body {
+  padding-top: 25px;
+}
+.mdl-body-content {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.mdl-wrapper {
+
+  height: 323px;
+}
 .mdl-weigth-text--600 {
   font-weight: 600;
 }
@@ -254,6 +271,14 @@ a.mdl-link:hover {
   background-size: cover;
   background-attachment: fixed;
 }
+.mdl-layer-1 {
+  position: relative;
+}
+
+.mdl-layer-2 {
+  position: relative;
+  top: -23px;
+}
 .mdl-footer {
   background-color: #212121;
   text-align: center;
@@ -261,7 +286,7 @@ a.mdl-link:hover {
 /* material design end */
 
 #daftar {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 #daftar a {
@@ -270,13 +295,4 @@ a.mdl-link:hover {
 
 #footer {  
   padding-top: 15px;
-}
-
-.mdl-layer-1 {
-  position: relative;
-}
-
-.mdl-layer-2 {
-  position: relative;
-  top: -23px;
 }
