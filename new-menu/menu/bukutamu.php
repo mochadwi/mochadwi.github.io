@@ -32,6 +32,7 @@
                         echo '<th>Aksi</th>';
                         echo '</tr>';
                         foreach ($result as $row) {
+                        // while ($row = $q->fetch_assoc()) {
                             echo '<tr>';
                                 echo '<td>'. $row['name'] . '</td>';
                                 echo '<td>'. $row['address'] . '</td>';

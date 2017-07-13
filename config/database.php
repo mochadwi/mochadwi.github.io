@@ -3,8 +3,9 @@ class Database
 {
 	private static $dbName = 'tubes_it9'; 
 	private static $dbHost = 'localhost';
-	private static $dbUsername = 'root';
-	private static $dbUserPassword = '';
+	// private static $dbUsername = 'root';
+    private static $dbUsername = 'root';
+	private static $dbUserPassword = 'admin';
 	
 	private static $cont  = null;
 	
