@@ -1,4 +1,6 @@
 <?php
+    include($_SERVER['DOCUMENT_ROOT'] . "/config/database.php");
+    // include(__DIR__ . "/config/database.php");
     $guestName = $_POST['name'];
     $guestAddress = $_POST['address'];
     $guestEmail = $_POST['email'];
@@ -8,34 +10,34 @@
     if (($guestName!="") && ($guestAddress!="") && ($guestEmail!="") &&
     ($guestGender!="") && ($guestComment!=""))
     {
-        $db = new PDO('mysql:host=localhost;dbname=tubes_it9', 'root', '');
-        //then much later
-        try {
-            getData($db);
-        } catch(PDOException $ex) {
-            //handle me.
-        }
+        $db = Database::connect();
+        $sql = 'INSERT INTO guest (name, address, email, gender, comment, visit) VALUES(?, ?, ?, ?, ?, NOW())';
+        // $sql = "SELECT * FROM guest";
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $query = $db->prepare($sql);
 
-        $db->query("insert into buku_tamu(nama_tamu, alamat_tamu, notelp_tamu,
-        pesan_tamu,tanggal_bertamu)
+        try {
+            $query->execute(array($guestName, $guestAddress, $guestEmail, $guestGender,
+                                $guestComment));
+        } catch(PDOException $ex) {
+            // if error persisted
+            die($ex->getMessage());  
+        }
         
-        values('$nama_tamu','$alamat_tamu','$notelp_tamu','$pesan_tamu')");
-        
-        if ($hasil)
+        // header("Location: form.html");
+
+        if ($query)
         {
-            echo"<tr><td colspan=2>Data telah disimpan!";
+            echo "<center>Terima kasih telah memberi saran :)</center>";
         }
         else
         {
-            echo"<tr><td colspan=2>Data gagal disimpan!";
+            echo "<center>Sedang ada masalah, coba lagi nanti!<center>";
         }
+
+        Database::disconnect();
     } else
     {
-        echo "<tr><td colspan=2>Data masih kosong!";
-    }
-
-    function getData($db) {
-        $stmt = $db->query("SELECT * FROM guest");
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        echo "<center>Jangan masukkan data kosong!</center>";
     }
 ?>
