@@ -1,38 +1,32 @@
 <?php
     include($_SERVER['DOCUMENT_ROOT'] . "/config/database.php");
-    // include(__DIR__ . "/config/database.php");
-    $guestName = $_POST['name'];
-    $guestAddress = $_POST['address'];
-    $guestEmail = $_POST['email'];
-    $guestGender = $_POST['gender'];
-    $guestComment = $_POST['comment'];
+    $username = $_POST['username'];
+    $password = sha1($_POST['password']);
 
-    if (($guestName!="") && ($guestAddress!="") && ($guestEmail!="") &&
-    ($guestGender!="") && ($guestComment!=""))
+    if (($username != "") && ($password != ""))
     {
         $db = Database::connect();
-        // $sql = 'INSERT INTO guest (name, address, email, gender, comment, visit) VALUES(?, ?, ?, ?, ?, NOW())';
-        $sql = "SELECT * FROM guest";
+        $sql = "SELECT * FROM user WHERE username = ? AND password = ?";
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $query = $db->prepare($sql);
+        $q = $db->prepare($sql);
+        $q->execute(array($username, $password));
+        $data = $q->fetch(PDO::FETCH_ASSOC);
 
-        try {
-            $query->execute(array($guestName, $guestAddress, $guestEmail, $guestGender,
-                                $guestComment));
-        } catch(PDOException $ex) {
-            // if error persisted
-            die($ex->getMessage());  
-        }
+        // try {
+        //     $query->execute(array($username));
+        // } catch(PDOException $ex) {
+        //     // if error persisted
+        //     die($ex->getMessage());  
+        // }
         
         // header("Location: form.html");
-
-        if ($query)
+        if (($data['username'] == $username) && ($data['password'] == $password))
         {
-            echo "<center>Terima kasih telah memberi saran :)</center>";
+            echo "<center>Berhasil login</center>";
         }
         else
         {
-            echo "<center>Sedang ada masalah, coba lagi nanti!<center>";
+            echo "<center>Username atau password salah!<center>";
         }
 
         Database::disconnect();
