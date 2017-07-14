@@ -41,7 +41,7 @@
           <div class="generator-description">
             Penjelasan lebih dalam mengenai apa itu E-learning
           </div>
-        </a> 
+        </a>
         <a class="home-generator-card" href="./new-menu/bio/home.html">
           <img alt="App shortcut icon generator" class="generator-image" src="./img/mochadwi.jpg">
           <div class="generator-title">
@@ -51,15 +51,32 @@
             Berikut hal-hal menarik yang dapat kamu ketahui!
           </div>
         </a> 
-        <a class="home-generator-card is-external" href="./new-menu/feedback/home.html">
-        <img alt="Android Icon Animator" class="generator-image" src="./img/big_bang_theory.gif">
-        <div class="generator-title">
-          Feedback
-        </div>
-        <div class="generator-description">
-          Silakan beri komentar kamu ya~
-          pada menu berikut
-        </div></a>
+        <?php
+          if (!isset($session)) {
+            echo '
+            <a class="home-generator-card is-external" href="./new-menu/feedback/home.html">
+              <img alt="Android Icon Animator" class="generator-image" src="./img/big_bang_theory.gif">
+              <div class="generator-title">
+                Feedback
+              </div>
+              <div class="generator-description">
+                Silakan beri komentar kamu ya~
+                pada menu berikut
+              </div>
+            </a>';
+          } else {
+            echo '
+            <a class="home-generator-card" href="./new-menu/admin/home.html">
+              <img alt="List" class="generator-image" src="./assets/list.jpg" />
+              <div class="generator-title">
+                Buku Tamu
+              </div>
+              <div class="generator-description">
+                Menu daftar pengunjung (admin only)
+              </div>
+            </a>';
+          }
+        ?>
       </div>
     </div>
     <div class="home-footer">

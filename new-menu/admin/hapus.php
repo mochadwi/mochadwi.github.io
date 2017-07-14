@@ -17,7 +17,7 @@
 
     if ($count > 0) {
         echo 'Berhasil menghapus data.';
-        usleep(5000000);
+        usleep(3000000);
         header("Location: bukutamu.php");
     } else {
         echo 'Gagal, menghapush!';
