@@ -40,9 +40,7 @@
                                 echo '<td>'. $row['gender'] . '</td>';
                                 echo '<td>'. $row['comment'] . '</td>';
                                 echo '<td>'. $row['visit'] . '</td>';
-                                echo '<td>
-                                    <a href="#">Hapus</a>|<a href="#">Ubah</a>
-                                </td>';
+                                echo '<td><a href="hapus.php?id='.$row['id'].'">Hapus</a></td>';
                             echo '</tr>';
                         }
                         echo '</table>';
