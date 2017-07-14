@@ -1425,6 +1425,10 @@ a {
     cursor: pointer;
 }
 
+a.login {
+    color: rgba(255, 255, 255, .7);
+}
+
 a > label {
     display: block;
     font-size: 13px;

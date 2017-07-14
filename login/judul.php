@@ -4,7 +4,7 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta content="chrome=1" http-equiv="X-UA-Compatible">
   <title>(Tugas Besar HTML) E-Learning - Metode pembelajaran interaktif</title>
-  <link href="../../stylesheets/main.css" rel="stylesheet">
+  <link href="../stylesheets/main.css" rel="stylesheet">
 </head>
 <body class="page-launcher-icon-generator form-field-drop-target">
   <header class="page-header">
@@ -12,7 +12,7 @@
     <?php 
       echo '<a class="page-header-crumb" href="../../index.php" target="_parent">E-Learning</a>';
     ?>
-    <h1 class="page-header-title">Feedback</h1>
+    <h1 class="page-header-title">Login</h1>
   </header>
 </body>
 </html>

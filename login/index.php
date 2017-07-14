@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="chrome=1" http-equiv="X-UA-Compatible">
+  <title>(Tugas Besar HTML) E-Learning - Metode pembelajaran interaktif</title>
+</head>
+<frameset rows="11%,*" frameborder="no" name="master">
+  <frame src="./judul.php" name="judul" scrolling="no" noresize>
+  <frame src="./form.html" name="dashboard" scrolling="yes" noresize>
+</frameset>
+</html>

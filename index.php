@@ -12,8 +12,8 @@
         <h1>E-Learning</h1>
         <p class="subtitle">Sebenarnya apa itu E-learning? Berikut saya rangkum beberapa platform yang 
           mengusung tema pembelajaran interaktif dan online.</p>
-        <p>
-          Login
+        <p class="subtitle">
+          <a class="login" href="login/">>> Login here <<</a>
         </p>
       </div>
     </div>
@@ -50,7 +50,7 @@
     </div>
     <div class="home-footer">
       <div class="inner">
-        Created by <a href="#">10116122 IT9 Mochamad Iqbal Dwi Cahyo</a>. 
+        Created by <a href="#">10116122 IT9 Mochamad Iqbal Dwi Cahyo</a>.
       </div>
     </div>
   </body>
