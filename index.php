@@ -12,6 +12,9 @@
         <h1>E-Learning</h1>
         <p class="subtitle">Sebenarnya apa itu E-learning? Berikut saya rangkum beberapa platform yang 
           mengusung tema pembelajaran interaktif dan online.</p>
+        <p>
+          Login
+        </p>
       </div>
     </div>
     <div class="home-generator-list">

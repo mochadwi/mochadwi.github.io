@@ -16,7 +16,9 @@
     }
 
     if ($count > 0) {
-        echo 'Berhasil menghapus data. <a href="#">Kembali</a>';
+        echo 'Berhasil menghapus data.';
+        usleep(5000000);
+        header("Location: bukutamu.php");
     } else {
         echo 'Gagal, menghapush!';
     }
