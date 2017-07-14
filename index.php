@@ -1,12 +1,12 @@
 <?php
   session_start();
-  $session = $_SESSION['username'];
   $msg = ">> Login here <<";
   $dir = "login";
 
-  if (isset($session)) {
+  if (isset($_SESSION['username'])) {
     $msg = ">> Logout here <<";
     $dir = "logout";
+    $session = $_SESSION['username'];
   }
 ?>
 
