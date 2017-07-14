@@ -1,4 +1,5 @@
 <?php
+    session_start(); // init session
     include($_SERVER['DOCUMENT_ROOT'] . "/config/database.php");
     $username = $_POST['username'];
     $password = sha1($_POST['password']);
@@ -22,7 +23,10 @@
         // header("Location: form.html");
         if (($data['username'] == $username) && ($data['password'] == $password))
         {
+            $_SESSION['username'] = $username;
+            // header("location: ../index.php");
             echo "<center>Berhasil login</center>";
+            echo '<center><a href="../index.php" target="_parent">Ke halaman utama</a></center>';
         }
         else
         {

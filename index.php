@@ -1,3 +1,15 @@
+<?php
+  session_start();
+  $session = $_SESSION['username'];
+  $msg = ">> Login here <<";
+  $dir = "login";
+
+  if (isset($session)) {
+    $msg = ">> Logout here <<";
+    $dir = "logout";
+  }
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,7 +25,9 @@
         <p class="subtitle">Sebenarnya apa itu E-learning? Berikut saya rangkum beberapa platform yang 
           mengusung tema pembelajaran interaktif dan online.</p>
         <p class="subtitle">
-          <a class="login" href="login/">>> Login here <<</a>
+          <?php
+            echo '<a class="login" href="'.$dir.'/">'.$msg.'</a>';
+          ?>
         </p>
       </div>
     </div>
